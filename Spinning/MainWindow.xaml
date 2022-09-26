@@ -49,7 +49,7 @@
                    Stroke="#FFFF00" 
                    StrokeThickness="5"
                    RenderTransformOrigin="0.5,0.5"
-                   MouseDown="star1_MouseDown">
+                   MouseUp="star1_MouseDown">
                 <Path.RenderTransform>
                     <RotateTransform Angle="0"/>
                 </Path.RenderTransform>
@@ -62,7 +62,7 @@
                    Stroke="#FFFF00" 
                    StrokeThickness="5"
                    RenderTransformOrigin="0.5,0.5"
-                   MouseDown="star2_MouseDown">
+                   MouseUp="star2_MouseDown">
                 <Path.RenderTransform>
                     <RotateTransform Angle="0"/>
                 </Path.RenderTransform>
@@ -75,7 +75,7 @@
                    Stroke="#FFFF00" 
                    StrokeThickness="5"
                    RenderTransformOrigin="0.5,0.5"
-                   MouseDown="star3_MouseDown">
+                   MouseUp="star3_MouseDown">
                 <Path.RenderTransform>
                     <RotateTransform Angle="0"/>
                 </Path.RenderTransform>
@@ -88,7 +88,7 @@
                    Stroke="#FFFF00" 
                    StrokeThickness="5"
                    RenderTransformOrigin="0.5,0.5"
-                   MouseDown="star4_MouseDown">
+                   MouseUp="star4_MouseDown">
                 <Path.RenderTransform>
                     <RotateTransform Angle="0"/>
                 </Path.RenderTransform>
@@ -101,7 +101,7 @@
                    Stroke="#FFFF00" 
                    StrokeThickness="5"
                    RenderTransformOrigin="0.5,0.5"
-                   MouseDown="star5_MouseDown">
+                   MouseUp="star5_MouseDown">
                 <Path.RenderTransform>
                     <RotateTransform Angle="0"/>
                 </Path.RenderTransform>

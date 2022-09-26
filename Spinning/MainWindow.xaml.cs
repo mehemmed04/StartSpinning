@@ -47,25 +47,21 @@ namespace Spinning
         private void star2_MouseDown(object sender, MouseButtonEventArgs e)
         {
             StarCount = 2;
-
         }
 
         private void star3_MouseDown(object sender, MouseButtonEventArgs e)
         {
             StarCount = 3;
-
         }
 
         private void star4_MouseDown(object sender, MouseButtonEventArgs e)
         {
             StarCount = 4;
-
         }
 
         private void star5_MouseDown(object sender, MouseButtonEventArgs e)
         {
             StarCount = 5;
-
         }
     }
 }
