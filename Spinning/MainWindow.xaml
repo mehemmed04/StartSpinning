@@ -1,0 +1,114 @@
+﻿<Window x:Class="Spinning.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Spinning"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Window.Resources>
+        <Style TargetType="Path">
+            <Style.Triggers>
+                <EventTrigger RoutedEvent="MouseDown">
+                    <BeginStoryboard>
+                        <Storyboard Storyboard.TargetProperty="RenderTransform.(RotateTransform.Angle)">
+                            <DoubleAnimation From="0" To="360" Duration="0:0:3" AutoReverse="False" />
+                            <ColorAnimation To="Yellow" 
+                                            Storyboard.TargetProperty="(Path.Fill).(SolidColorBrush.Color)"
+                                            Duration="0:0:3"/>
+                        </Storyboard>
+                    </BeginStoryboard>
+                </EventTrigger>
+            </Style.Triggers>
+        </Style>
+    </Window.Resources>
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1.5*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock HorizontalAlignment="Center"
+                   VerticalAlignment="Center"
+                   FontSize="45"
+                   Text="{Binding StarCount}"
+                   >
+        </TextBlock>
+
+        <StackPanel Grid.Row="1"
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Center"
+                    Height="140">
+
+            <Path  Name="star1" 
+                   Margin="20" 
+                   Data="M48 8.09016L56.8481 35.3217L57.4093 37.0491H59.2257H87.8586L64.6941 53.8792L63.2246 54.9468L63.7859 56.6742L72.634 83.9058L49.4695 67.0758L48 66.0081L46.5305 67.0758L23.366 83.9058L32.2141 56.6742L32.7754 54.9468L31.3059 53.8792L8.14138 37.0491H36.7743H38.5907L39.1519 35.3217L48 8.09016Z" 
+                   Fill="White" 
+                   Stroke="#FFFF00" 
+                   StrokeThickness="5"
+                   RenderTransformOrigin="0.5,0.5"
+                   MouseDown="star1_MouseDown">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </Path.RenderTransform>
+            </Path>
+
+            <Path  Name="star2" 
+                   Margin="20" 
+                   Data="M48 8.09016L56.8481 35.3217L57.4093 37.0491H59.2257H87.8586L64.6941 53.8792L63.2246 54.9468L63.7859 56.6742L72.634 83.9058L49.4695 67.0758L48 66.0081L46.5305 67.0758L23.366 83.9058L32.2141 56.6742L32.7754 54.9468L31.3059 53.8792L8.14138 37.0491H36.7743H38.5907L39.1519 35.3217L48 8.09016Z" 
+                   Fill="White" 
+                   Stroke="#FFFF00" 
+                   StrokeThickness="5"
+                   RenderTransformOrigin="0.5,0.5"
+                   MouseDown="star2_MouseDown">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </Path.RenderTransform>
+            </Path>
+
+            <Path  Name="star3" 
+                   Margin="20" 
+                   Data="M48 8.09016L56.8481 35.3217L57.4093 37.0491H59.2257H87.8586L64.6941 53.8792L63.2246 54.9468L63.7859 56.6742L72.634 83.9058L49.4695 67.0758L48 66.0081L46.5305 67.0758L23.366 83.9058L32.2141 56.6742L32.7754 54.9468L31.3059 53.8792L8.14138 37.0491H36.7743H38.5907L39.1519 35.3217L48 8.09016Z" 
+                   Fill="White" 
+                   Stroke="#FFFF00" 
+                   StrokeThickness="5"
+                   RenderTransformOrigin="0.5,0.5"
+                   MouseDown="star3_MouseDown">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </Path.RenderTransform>
+            </Path>
+
+            <Path  Name="star4" 
+                   Margin="20" 
+                   Data="M48 8.09016L56.8481 35.3217L57.4093 37.0491H59.2257H87.8586L64.6941 53.8792L63.2246 54.9468L63.7859 56.6742L72.634 83.9058L49.4695 67.0758L48 66.0081L46.5305 67.0758L23.366 83.9058L32.2141 56.6742L32.7754 54.9468L31.3059 53.8792L8.14138 37.0491H36.7743H38.5907L39.1519 35.3217L48 8.09016Z" 
+                   Fill="White" 
+                   Stroke="#FFFF00" 
+                   StrokeThickness="5"
+                   RenderTransformOrigin="0.5,0.5"
+                   MouseDown="star4_MouseDown">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </Path.RenderTransform>
+            </Path>
+
+            <Path  Name="star5" 
+                   Margin="20" 
+                   Data="M48 8.09016L56.8481 35.3217L57.4093 37.0491H59.2257H87.8586L64.6941 53.8792L63.2246 54.9468L63.7859 56.6742L72.634 83.9058L49.4695 67.0758L48 66.0081L46.5305 67.0758L23.366 83.9058L32.2141 56.6742L32.7754 54.9468L31.3059 53.8792L8.14138 37.0491H36.7743H38.5907L39.1519 35.3217L48 8.09016Z" 
+                   Fill="White" 
+                   Stroke="#FFFF00" 
+                   StrokeThickness="5"
+                   RenderTransformOrigin="0.5,0.5"
+                   MouseDown="star5_MouseDown">
+                <Path.RenderTransform>
+                    <RotateTransform Angle="0"/>
+                </Path.RenderTransform>
+            </Path>
+
+
+        </StackPanel>
+        
+    </Grid>
+</Window>

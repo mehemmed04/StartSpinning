@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32630.192
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Spinning", "Spinning\Spinning.csproj", "{7212C1B6-D790-49C1-BE5A-0C2587C5F76C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7212C1B6-D790-49C1-BE5A-0C2587C5F76C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7212C1B6-D790-49C1-BE5A-0C2587C5F76C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7212C1B6-D790-49C1-BE5A-0C2587C5F76C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7212C1B6-D790-49C1-BE5A-0C2587C5F76C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC98E679-DFF9-450F-B3C8-BB96FD18DD7D}
+	EndGlobalSection
+EndGlobal
